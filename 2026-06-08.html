@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>미국주부 — 이번 주 트렌드 한눈 요약 (2026-06-08)</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0B1020; --bg2:#121a30; --card:#16203a; --line:#26314f;
+  --ink:#F4F7FF; --sub:#9CB0D6; --mut:#6E80AA;
+  --red:#FF4D6D; --pink:#FF6FA5; --amber:#FFB23E; --green:#37E0A6; --blue:#4EA8FF; --purple:#9B7CFF; --orange:#FF7A45;
+  --sans:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,-apple-system,sans-serif;
+  --mono:'SF Mono','JetBrains Mono',ui-monospace,monospace;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.4}
+.wrap{max-width:1280px;margin:0 auto;padding:0 28px}
+.screen{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:60px 0;border-bottom:1px solid var(--line)}
+.screen:last-child{border-bottom:none}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:15px;font-weight:700;letter-spacing:.12em;color:var(--amber);margin-bottom:16px}
+.eyebrow .num{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:9px;background:var(--amber);color:#1a1300;font-weight:800;font-size:15px}
+h2.title{font-size:50px;font-weight:900;letter-spacing:-.02em;line-height:1.08;margin-bottom:12px}
+.lead{font-size:19px;color:var(--sub);max-width:980px;margin-bottom:30px;line-height:1.55}
+.hi{color:var(--amber)} .hi-r{color:var(--red)} .hi-g{color:var(--green)} .hi-b{color:var(--blue)} .hi-p{color:var(--purple)}
+.hero{background:radial-gradient(1100px 600px at 80% -10%, rgba(255,111,165,.18), transparent 60%),radial-gradient(900px 500px at 0% 110%, rgba(78,168,255,.16), transparent 55%),var(--bg)}
+.hero .pill{display:inline-flex;align-items:center;gap:9px;background:rgba(255,77,109,.12);border:1px solid rgba(255,77,109,.4);color:var(--pink);font-family:var(--mono);font-size:14px;font-weight:700;padding:8px 16px;border-radius:100px;margin-bottom:24px}
+.hero .dot{width:9px;height:9px;border-radius:50%;background:var(--red);animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(255,77,109,.5)}50%{opacity:.5;box-shadow:0 0 0 8px rgba(255,77,109,0)}}
+.hero h1{font-size:72px;font-weight:900;letter-spacing:-.03em;line-height:1.05;margin-bottom:16px}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero .hsub{font-size:21px;color:var(--sub);margin-bottom:40px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 20px}
+.kpi .v{font-family:var(--mono);font-size:36px;font-weight:800;line-height:1;margin-bottom:9px}
+.kpi .l{font-size:15px;color:var(--sub);line-height:1.4}
+.kpi .wow{font-family:var(--mono);font-size:12px;font-weight:700;margin-top:8px;display:inline-block}
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}
+.legitem{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--sub)}
+.swatch{width:34px;height:22px;border-radius:6px;display:grid;place-items:center;font-size:13px}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.act{font-size:13px;font-weight:700;padding:6px 11px;border-radius:8px;display:inline-flex;align-items:center;gap:6px;font-family:var(--mono)}
+.act-drop{background:rgba(78,168,255,.14);color:var(--blue);border:1px solid rgba(78,168,255,.35)}
+.act-aff{background:rgba(55,224,166,.14);color:var(--green);border:1px solid rgba(55,224,166,.35)}
+.act-brand{background:rgba(155,124,255,.16);color:var(--purple);border:1px solid rgba(155,124,255,.35)}
+.howto{font-size:14px;color:var(--sub);line-height:1.5;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}
+.howto b{color:var(--ink)}
+.thumb{width:96px;height:96px;border-radius:16px;flex:none;display:grid;place-items:center;border:1px solid var(--line);overflow:hidden}
+.thumb svg{width:60px;height:60px}
+.thumb img{width:100%;height:100%;object-fit:cover;border-radius:14px;display:block}
+a.thumb{position:relative;cursor:pointer;text-decoration:none}
+a.thumb::after{content:"↗";position:absolute;bottom:5px;right:5px;font-size:12px;font-weight:800;color:#fff;background:rgba(0,0,0,.6);border-radius:6px;width:20px;height:20px;display:grid;place-items:center;opacity:0;transition:.15s}
+a.thumb:hover::after{opacity:1}
+.t-pink{background:linear-gradient(140deg,#2a1730,#3a1a2b);color:#FF8FB6}
+.t-blue{background:linear-gradient(140deg,#0f2036,#13314f);color:#7CC0FF}
+.t-green{background:linear-gradient(140deg,#0f2b25,#123a30);color:#5FE8BC}
+.t-amber{background:linear-gradient(140deg,#322512,#3d2c12);color:#FFC861}
+.t-purple{background:linear-gradient(140deg,#241b3a,#2e2150);color:#B9A1FF}
+.t-gray{background:linear-gradient(140deg,#1a2138,#212a44);color:#A9BBDF}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;display:flex;flex-direction:column}
+.pcard .top{display:flex;gap:16px;align-items:flex-start}
+.pcard .meta{flex:1;min-width:0}
+.plat{font-family:var(--mono);font-size:12px;font-weight:700;padding:4px 9px;border-radius:6px;display:inline-block;margin-bottom:8px}
+.plat-tt{background:rgba(255,77,109,.16);color:var(--pink)}
+.plat-nx{background:rgba(78,168,255,.16);color:var(--blue)}
+.pname{font-size:19px;font-weight:800;line-height:1.3}
+.pstat{display:flex;align-items:baseline;gap:10px;margin-top:10px}
+.pstat .big{font-family:var(--mono);font-size:30px;font-weight:800;color:var(--green);line-height:1}
+.pstat .sub{font-size:14px;color:var(--sub)}
+.pprice{font-family:var(--mono);font-size:15px;font-weight:700;color:var(--amber)}
+.hd{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:11px;font-weight:800;color:#FF4D6D;background:rgba(255,77,109,.12);border:1px solid rgba(255,77,109,.4);border-radius:100px;padding:3px 9px;vertical-align:middle}
+.links{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px;padding-top:12px;border-top:1px dashed var(--line)}
+.lnk{font-family:var(--mono);font-size:12.5px;font-weight:700;text-decoration:none;padding:6px 10px;border-radius:7px;border:1px solid var(--line);color:var(--sub);transition:all .15s;white-space:nowrap}
+.lnk:hover{transform:translateY(-1px)}
+.l-ali{color:var(--orange);border-color:rgba(255,122,69,.4)}
+.l-ali:hover{background:rgba(255,122,69,.12)}
+.l-amz{color:var(--amber);border-color:rgba(255,178,62,.35)}
+.l-amz:hover{background:rgba(255,178,62,.1)}
+.l-stt{color:var(--pink);border-color:rgba(255,111,165,.35)}
+.l-stt:hover{background:rgba(255,111,165,.1)}
+.l-vid{color:var(--purple);border-color:rgba(155,124,255,.4)}
+.l-vid:hover{background:rgba(155,124,255,.12)}
+.chartwrap{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px 20px 12px}
+.chart-legend{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;margin-top:6px;font-size:14.5px;color:var(--sub)}
+.cl{display:inline-flex;align-items:center;gap:8px}
+.cl .ln{width:22px;height:4px;border-radius:2px}
+.trendbar{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.tbItem{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 15px;font-size:15px;font-weight:600}
+.tbItem b{color:var(--amber)}
+.fd{background:linear-gradient(135deg, rgba(255,178,62,.14), rgba(255,111,165,.1)),var(--card);border:1px solid rgba(255,178,62,.4);border-radius:20px;padding:26px}
+.countdown{display:flex;align-items:baseline;gap:14px;margin-bottom:6px}
+.countdown .big{font-family:var(--mono);font-size:60px;font-weight:900;color:var(--amber);line-height:1}
+.countdown .unit{font-size:22px;font-weight:800;color:var(--sub)}
+.win{display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px 16px;margin-bottom:11px;flex-wrap:wrap}
+.win .thumb{width:72px;height:72px}.win .thumb svg{width:44px;height:44px}
+.win .wn{flex:1;min-width:130px}
+.win .wn .t{font-size:18px;font-weight:800;line-height:1.25}
+.win .wn .c{font-size:13px;color:var(--mut);font-family:var(--mono);margin-top:4px}
+.win .m{text-align:right;flex:none}
+.win .m .mv2{font-family:var(--mono);font-size:24px;font-weight:800;color:var(--green);line-height:1}
+.win .m .ml{font-size:13px;color:var(--sub);margin-top:5px}
+.win .wlinks{flex-basis:100%;display:flex;gap:7px;flex-wrap:wrap}
+.win.top{border-color:rgba(55,224,166,.5);background:linear-gradient(135deg,rgba(55,224,166,.08),transparent),var(--card)}
+.crown{font-size:12px;font-family:var(--mono);font-weight:700;color:var(--green);letter-spacing:.06em;margin-bottom:3px}
+.adcard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.adcard .fmt{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--purple);letter-spacing:.05em}
+.adcard .ah{font-size:22px;font-weight:800;line-height:1.3}
+.adcard .aq{font-size:15px;color:var(--sub);line-height:1.5}
+.adcard .amet{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--amber);background:rgba(255,178,62,.08);border-radius:8px;padding:7px 11px}
+.vid{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:11px}
+.vid .vnum{font-family:var(--mono);font-size:42px;font-weight:900;color:var(--purple);line-height:1}
+.vid .vt{font-size:21px;font-weight:800;line-height:1.3}
+.vid .vd{font-size:15px;color:var(--sub);line-height:1.5}
+.vid .vmeta{margin-top:auto;font-family:var(--mono);font-size:13px;font-weight:700;color:var(--amber);background:rgba(255,178,62,.08);border-radius:8px;padding:8px 12px}
+.foot{text-align:center;padding:46px 0 64px;color:var(--mut);font-family:var(--mono);font-size:14px;line-height:1.8}
+@media(max-width:980px){.hero h1{font-size:44px} h2.title{font-size:34px} .lead{font-size:17px} .kpis,.g3{grid-template-columns:1fr 1fr} .g2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<section class="screen hero">
+  <div class="wrap">
+    <div class="pill"><span class="dot"></span> 셀더트렌드 주간 트렌드 · 2026.06.08</div>
+    <h1>이번 주 미국에서<br><em>진짜 잘 팔리는 것들</em></h1>
+    <p class="hsub">6개 대시보드 종합 — 제품 링크·영상 링크까지 담은 미국주부 콘텐츠/공유용 요약</p>
+    <div class="kpis">
+      <div class="kpi"><div class="v" style="color:var(--blue)">D-13</div><div class="l">아버지의 날(6/21)까지</div><div class="wow" style="color:var(--red)">▼ 지난주 D-20 · 배송 마감 임박</div></div>
+      <div class="kpi"><div class="v" style="color:var(--green)">청소가전</div><div class="l">이번 주 <b>신상 위너 1위</b> 테마</div><div class="wow" style="color:var(--green)">🆕 스팀청소·UV청소·바닥세정 폭발</div></div>
+      <div class="kpi"><div class="v" style="color:var(--pink)">$4.7M</div><div class="l">틱톡샵 1위 = <b>자동차 공구</b></div><div class="wow" style="color:var(--amber)">🔁 지난주 베이비욕조 → 공구로 역전</div></div>
+      <div class="kpi"><div class="v" style="color:var(--purple)">745K</div><div class="l">제습·곰팡이 광고 재생수</div><div class="wow" style="color:var(--green)">▲ 지난주 바이럴 7.3K의 100배+</div></div>
+    </div>
+    <div class="trendbar">
+      <div class="tbItem">🔥 지금 뜨는 것: <b>청소 가전 · 여름 냉방/제습</b></div>
+      <div class="tbItem">🎁 시즌: <b>아버지의 날 공구·자동차 선물</b> (D-13)</div>
+      <div class="tbItem">📉 빠지는 것: <b>정원 데코 · 뷰티 신상</b> (광고만 생존)</div>
+    </div>
+    <div class="legend">
+      <div class="legitem"><span class="swatch act-drop">🚚</span> <b style="color:var(--blue)">드롭쉬핑</b> — 직접 떼다 파는 위탁판매</div>
+      <div class="legitem"><span class="swatch act-aff">🤝</span> <b style="color:var(--green)">제휴 마케팅</b> — 링크 걸고 수수료</div>
+      <div class="legitem"><span class="swatch act-brand">🏷️</span> <b style="color:var(--purple)">내 브랜드화</b> — 디지털/POD 자체 상품</div>
+    </div>
+  </div>
+</section>
+<section class="screen">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">1</span> 핫 테마 주간 등락 · 지난주(06-01) ▸ 이번주(06-08)</div>
+    <h2 class="title">한 주 만에 <span class="hi">청소·냉방으로</span> 갈아탔다</h2>
+    <p class="lead">니치 스파이 공식 랭킹은 <b>월 단위</b>라 6월 내내 동일(주방 1위 유지). 그래서 진짜 변화는 <b class="hi-g">제품·광고 단위</b>에서 봐요 — 청소 가전·여름 냉방이 치고 올라오고 정원 데코·뷰티 신상은 빠졌어요.</p>
+    <div class="chartwrap">
+      <svg viewBox="0 0 1120 400" width="100%">
+        <text x="180" y="20" fill="#9CB0D6" font-size="17" font-weight="800" text-anchor="middle">지난주 테마</text>
+        <text x="930" y="20" fill="#9CB0D6" font-size="17" font-weight="800" text-anchor="middle">이번주 테마</text>
+        <path d="M340,135 C560,135 560,91 760,91" fill="none" stroke="#37E0A6" stroke-width="4"/>
+        <path d="M340,267 C560,267 560,223 760,223" fill="none" stroke="#37E0A6" stroke-width="3"/>
+        <path d="M340,91 C560,91 560,179 760,179" fill="none" stroke="#FF4D6D" stroke-width="4"/>
+        <path d="M340,179 C560,179 560,355 760,355" fill="none" stroke="#FF4D6D" stroke-width="3"/>
+        <path d="M340,47 C560,47 560,135 760,135" fill="none" stroke="#FFB23E" stroke-width="4"/>
+        <path d="M340,311 C560,311 560,311 760,311" fill="none" stroke="#4a5878" stroke-width="3" stroke-dasharray="2 6"/>
+        <path d="M560,47 C660,47 660,47 760,47" fill="none" stroke="#FFB23E" stroke-width="3" stroke-dasharray="6 5"/>
+        <path d="M560,267 C660,267 660,267 760,267" fill="none" stroke="#FFB23E" stroke-width="3" stroke-dasharray="6 5"/>
+        <path d="M340,223 C470,223 520,223 585,223" fill="none" stroke="#FF4D6D" stroke-width="3" stroke-dasharray="2 6"/>
+        <path d="M340,355 C470,355 520,355 585,375" fill="none" stroke="#FF4D6D" stroke-width="3" stroke-dasharray="2 6"/>
+        <g font-size="16" font-weight="700">
+          <rect x="20" y="30" width="320" height="34" rx="9" fill="#16203a" stroke="#FFB23E" stroke-opacity=".6"/><text x="40" y="52" fill="#FFB23E" font-family="monospace" font-weight="800">1</text><text x="66" y="52" fill="#F4F7FF">정원/야외 공구</text>
+          <rect x="20" y="74" width="320" height="34" rx="9" fill="#16203a" stroke="#FF4D6D" stroke-opacity=".5"/><text x="40" y="96" fill="#FF4D6D" font-family="monospace" font-weight="800">2</text><text x="66" y="96" fill="#F4F7FF">베이비용품</text>
+          <rect x="20" y="118" width="320" height="34" rx="9" fill="#16203a" stroke="#37E0A6" stroke-opacity=".6"/><text x="40" y="140" fill="#37E0A6" font-family="monospace" font-weight="800">3</text><text x="66" y="140" fill="#F4F7FF">여름 냉방</text>
+          <rect x="20" y="162" width="320" height="34" rx="9" fill="#16203a" stroke="#FF4D6D" stroke-opacity=".5"/><text x="40" y="184" fill="#FF4D6D" font-family="monospace" font-weight="800">4</text><text x="66" y="184" fill="#F4F7FF">뷰티 신상</text>
+          <rect x="20" y="206" width="320" height="34" rx="9" fill="#1a1622" stroke="#FF4D6D" stroke-opacity=".3"/><text x="40" y="228" fill="#7d6b78" font-family="monospace" font-weight="800">5</text><text x="66" y="228" fill="#8c7f88" text-decoration="line-through">정원 데코</text><text x="328" y="228" fill="#FF6FA5" font-size="12.5" font-family="monospace" font-weight="700" text-anchor="end">이탈 ✕</text>
+          <rect x="20" y="250" width="320" height="34" rx="9" fill="#16203a" stroke="#37E0A6" stroke-opacity=".5"/><text x="40" y="272" fill="#37E0A6" font-family="monospace" font-weight="800">6</text><text x="66" y="272" fill="#F4F7FF">다이캐스트 컬렉터블</text>
+          <rect x="20" y="294" width="320" height="34" rx="9" fill="#16203a" stroke="#26314f"/><text x="40" y="316" fill="#9CB0D6" font-family="monospace" font-weight="800">7</text><text x="66" y="316" fill="#F4F7FF">스마트홈 보안</text>
+          <rect x="20" y="338" width="320" height="34" rx="9" fill="#1a1622" stroke="#FF4D6D" stroke-opacity=".3"/><text x="40" y="360" fill="#7d6b78" font-family="monospace" font-weight="800">8</text><text x="66" y="360" fill="#8c7f88" text-decoration="line-through">DIY 공예</text><text x="328" y="360" fill="#FF6FA5" font-size="12.5" font-family="monospace" font-weight="700" text-anchor="end">이탈 ✕</text>
+        </g>
+        <g font-size="16" font-weight="700">
+          <rect x="760" y="30" width="340" height="34" rx="9" fill="#16203a" stroke="#FFB23E"/><text x="784" y="52" fill="#FFB23E" font-family="monospace" font-weight="800">1</text><text x="810" y="52" fill="#F4F7FF" font-weight="800">청소 가전 🧽</text><text x="1086" y="52" fill="#FFB23E" font-size="12.5" font-family="monospace" font-weight="700" text-anchor="end">🆕 신규</text>
+          <rect x="760" y="74" width="340" height="34" rx="9" fill="#16203a" stroke="#37E0A6"/><text x="784" y="96" fill="#37E0A6" font-family="monospace" font-weight="800">2</text><text x="810" y="96" fill="#F4F7FF" font-weight="800">여름 냉방 ☀️</text><text x="1086" y="96" fill="#37E0A6" font-size="12.5" font-family="monospace" font-weight="700" text-anchor="end">▲1</text>
+          <rect x="760" y="118" width="340" height="34" rx="9" fill="#16203a" stroke="#FFB23E"/><text x="784" y="140" fill="#FFB23E" font-family="monospace" font-weight="800">3</text><text x="810" y="140" fill="#F4F7FF">자동차/공구 🔧</text><text x="1086" y="140" fill="#FFB23E" font-size="12.5" font-family="monospace" font-weight="700" text-anchor="end">🔁 전환</text>
+          <rect x="760" y="162" width="340" height="34" rx="9" fill="#16203a" stroke="#FF4D6D" stroke-opacity=".6"/><text x="784" y="184" fill="#FF4D6D" font-family="monospace" font-weight="800">4</text><text x="810" y="184" fill="#F4F7FF">베이비용품</text><text x="1086" y="184" fill="#FF4D6D" font-size="12.5" font-family="monospace" font-weight="700" text-anchor="end">▼2</text>
+          <rect x="760" y="206" width="340" height="34" rx="9" fill="#16203a" stroke="#37E0A6" stroke-opacity=".6"/><text x="784" y="228" fill="#37E0A6" font-family="monospace" font-weight="800">5</text><text x="810" y="228" fill="#F4F7FF">다이캐스트 컬렉터블</text><text x="1086" y="228" fill="#37E0A6" font-size="12.5" font-family="monospace" font-weight="700" text-anchor="end">▲1</text>
+          <rect x="760" y="250" width="340" height="34" rx="9" fill="#16203a" stroke="#FFB23E"/><text x="784" y="272" fill="#FFB23E" font-family="monospace" font-weight="800">6</text><text x="810" y="272" fill="#F4F7FF" font-weight="800">제습/곰팡이 💧</text><text x="1086" y="272" fill="#FFB23E" font-size="12.5" font-family="monospace" font-weight="700" text-anchor="end">🆕 신규</text>
+          <rect x="760" y="294" width="340" height="34" rx="9" fill="#16203a" stroke="#26314f"/><text x="784" y="316" fill="#9CB0D6" font-family="monospace" font-weight="800">7</text><text x="810" y="316" fill="#F4F7FF">스마트홈 보안</text><text x="1086" y="316" fill="#9CB0D6" font-size="12.5" font-family="monospace" font-weight="700" text-anchor="end">— 유지</text>
+          <rect x="760" y="338" width="340" height="34" rx="9" fill="#16203a" stroke="#FF4D6D" stroke-opacity=".6"/><text x="784" y="360" fill="#FF4D6D" font-family="monospace" font-weight="800">8</text><text x="810" y="360" fill="#F4F7FF">뷰티 (광고만 생존)</text><text x="1086" y="360" fill="#FF4D6D" font-size="12.5" font-family="monospace" font-weight="700" text-anchor="end">▼4</text>
+        </g>
+      </svg>
+      <div class="chart-legend">
+        <span class="cl"><span class="ln" style="background:#37E0A6"></span> 상승</span>
+        <span class="cl"><span class="ln" style="background:#FF4D6D"></span> 하락/이탈</span>
+        <span class="cl"><span class="ln" style="background:#FFB23E"></span> 🆕 신규/전환</span>
+        <span class="cl"><span class="ln" style="background:#4a5878"></span> 유지</span>
+      </div>
+    </div>
+    <div class="trendbar">
+      <div class="tbItem">📌 니치 스파이 공식 6월 Top10: <b>주방·DIY·로봇청소기</b> 1~4위 (월간 유지)</div>
+    </div>
+  </div>
+</section>
+<section class="screen">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--green)"><span class="num" style="background:var(--green);color:#06251b">💡</span> 왜 이렇게 바뀌었나 · 변화의 원인 (리서치)</div>
+    <h2 class="title">청소·냉방이 뜬 <span class="hi-g">3가지 이유</span></h2>
+    <p class="lead">정원·뷰티가 빠지고 청소 가전·냉방·공구가 오른 건 우연이 아니에요. 세 가지 힘이 <b>동시에</b> 작동했어요.</p>
+    <div class="grid g3">
+      <div class="pcard" style="border-color:rgba(78,168,255,.35)">
+        <div style="font-size:34px">💧</div>
+        <div style="font-size:21px;font-weight:800;margin:10px 0 6px">여름 습기 시즌 진입 <span class="hd" style="color:var(--blue);background:rgba(78,168,255,.12);border-color:rgba(78,168,255,.4)">가장 큰 힘</span></div>
+        <div style="font-size:15px;color:var(--sub);line-height:1.6">6월=미국 여름 시작, 실내 습도 상승. 업계 자료상 <b style="color:var(--ink)">RH 60% 초과 시 곰팡이·진드기 급증</b>. → 제습/곰팡이 광고가 745K로 터지고 쿨링 모자·시트팬·스팀청소기가 동시 부상.</div>
+        <div class="howto" style="color:var(--blue)"><b style="color:var(--blue)">결과:</b> 제습↑ · 냉방↑ · 청소가전↑</div>
+      </div>
+      <div class="pcard" style="border-color:rgba(255,178,62,.3)">
+        <div style="font-size:34px">🎁</div>
+        <div style="font-size:21px;font-weight:800;margin:10px 0 6px">아버지의 날 = '공구·자동차' 선물</div>
+        <div style="font-size:15px;color:var(--sub);line-height:1.6">6/21 아빠 선물은 <b style="color:var(--ink)">공구·자동차 액세서리·그릴</b>로 쏠려요. → 틱톡샵에 베어링 패커·용접기·레이저 레벨이 침투하고 FM 트랜스미터·소켓봉이 위너 진입.</div>
+        <div class="howto" style="color:var(--amber)"><b style="color:var(--amber)">결과:</b> 공구↑ · 자동차↑ (D-13)</div>
+      </div>
+      <div class="pcard" style="border-color:rgba(55,224,166,.3)">
+        <div style="font-size:34px">🧽</div>
+        <div style="font-size:21px;font-weight:800;margin:10px 0 6px">초여름 딥클리닝 + 위생</div>
+        <div style="font-size:15px;color:var(--sub);line-height:1.6">봄청소 직후 + 습기 시즌 = <b style="color:var(--ink)">매트리스 UV 청소기·고압 스팀청소기·바닥 세정 타블렛</b> 수요. Hand-Picked 최상위(POT $115K)를 청소 가전이 점령.</div>
+        <div class="howto" style="color:var(--green)"><b style="color:var(--green)">결과:</b> 청소가전↑ · 위생템↑</div>
+      </div>
+    </div>
+    <div style="margin-top:18px;background:linear-gradient(135deg,rgba(78,168,255,.1),transparent),var(--card);border:1px solid rgba(78,168,255,.35);border-radius:16px;padding:22px 26px">
+      <div style="font-family:var(--mono);font-size:12px;color:var(--blue);font-weight:700;letter-spacing:.1em;margin-bottom:8px">📌 한 줄 결론</div>
+      <div style="font-size:20px;font-weight:800;line-height:1.45">"<span class="hi-b">여름 습기</span> + <span class="hi">아버지의 날 공구</span>"가 겹치며 — 지난주 정원·뷰티 신상이 <span class="hi-g">청소가전·냉방·공구</span>로 한 주 만에 갈아탔어요.</div>
+    </div>
+    <div style="font-family:var(--mono);font-size:12px;color:var(--mut);margin-top:14px">출처: Panasonic 여름 곰팡이 성수기 · GEICO 여름 제습기 가이드 · Variety 2026 아버지의 날 선물 가이드</div>
+  </div>
+</section>
+<section class="screen">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">2</span> 틱톡샵·넥서스에서 잘 팔리는 제품 · 🔥 하이디맨드</div>
+    <h2 class="title">베이비 1위 자리를 <span class="hi-r">공구가 빼앗다</span></h2>
+    <p class="lead">틱톡샵 단일 1위가 <b>자동차 베어링 공구($4.7M)</b> — 베이비 천하에 공구가 침투. 각 카드의 <b class="hi-b">이미지·버튼을 누르면</b> 알리·아마존·셀더트렌드로 바로 이동해요.</p>
+    <div class="grid g3">
+      <div class="pcard">
+        <div class="top">
+          <a href="https://www.aliexpress.com/wholesale?SearchText=wheel+bearing+packer+tool" target="_blank" rel="noopener" class="thumb t-amber"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5"><circle cx="50" cy="50" r="26"/><circle cx="50" cy="50" r="9"/><path d="M50 8v14M50 78v14M8 50h14M78 50h14" stroke-linecap="round"/></svg></a>
+          <div class="meta"><span class="plat plat-tt">틱톡샵</span> <span class="hd">🔥 하이디맨드</span><div class="pname" style="margin-top:8px">자동차 휠 베어링 패커 공구<br><span style="font-size:14px;color:var(--mut);font-weight:600">SWANLAKE · 이번 주 틱톡샵 1위</span></div></div>
+        </div>
+        <div class="pstat"><span class="big">$4.7M</span><span class="sub">175,000개 판매 · $26.99</span></div>
+        <div class="acts"><span class="act act-drop">🚚 드롭쉬핑</span><span class="act act-aff">🤝 제휴</span></div>
+        <div class="howto"><b>아버지의 날 공구 시즌.</b> 차 정비 좋아하는 아빠 타깃 — 이베이/아마존 위탁판매 1순위.</div>
+        <div class="links"><a class="lnk l-ali" target="_blank" rel="noopener" href="https://www.aliexpress.com/wholesale?SearchText=wheel+bearing+packer+tool">🛒 알리</a><a class="lnk l-amz" target="_blank" rel="noopener" href="https://www.amazon.com/s?k=wheel+bearing+packer+tool">📦 아마존</a><a class="lnk l-stt" target="_blank" rel="noopener" href="https://www.sellthetrend.com/dashboard/products/tiktok-shop">🔗 셀더트렌드</a></div>
+      </div>
+      <div class="pcard">
+        <div class="top">
+          <a href="https://www.aliexpress.com/wholesale?SearchText=foldable+baby+bathtub+3+stage" target="_blank" rel="noopener" class="thumb t-pink"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"><path d="M16 50h68v8a16 16 0 01-16 16H32a16 16 0 01-16-16z"/><path d="M30 50V36a10 10 0 0120 0"/><circle cx="40" cy="32" r="3" fill="currentColor" stroke="none"/></svg></a>
+          <div class="meta"><span class="plat plat-tt">틱톡샵</span> <span class="hd">🔥 하이디맨드</span><div class="pname" style="margin-top:8px">접이식 3단 베이비 욕조<br><span style="font-size:14px;color:var(--mut);font-weight:600">Jool Baby · 신생아~유아</span></div></div>
+        </div>
+        <div class="pstat"><span class="big">$4.4M</span><span class="sub">98,000개 판매 · $44.50</span></div>
+        <div class="acts"><span class="act act-drop">🚚 드롭쉬핑</span></div>
+        <div class="howto"><b>베이비 스테디.</b> 욕조·카시트·바시넷 등 영유아템은 여전히 틱톡샵 다수 점령.</div>
+        <div class="links"><a class="lnk l-ali" target="_blank" rel="noopener" href="https://www.aliexpress.com/wholesale?SearchText=foldable+baby+bathtub+3+stage">🛒 알리</a><a class="lnk l-amz" target="_blank" rel="noopener" href="https://www.amazon.com/s?k=foldable+baby+bathtub">📦 아마존</a><a class="lnk l-stt" target="_blank" rel="noopener" href="https://www.sellthetrend.com/dashboard/products/tiktok-shop">🔗 셀더트렌드</a></div>
+      </div>
+      <div class="pcard">
+        <div class="top">
+          <a href="https://www.aliexpress.com/wholesale?SearchText=byd+1+18+diecast+model+car" target="_blank" rel="noopener" class="thumb t-blue"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"><path d="M18 58l8-20a8 8 0 017-5h34a8 8 0 017 5l8 20"/><path d="M14 58h72v12H14z"/><circle cx="32" cy="70" r="7"/><circle cx="68" cy="70" r="7"/></svg></a>
+          <div class="meta"><span class="plat plat-nx">넥서스 AI</span> <span class="hd">🔥 하이디맨드</span><div class="pname" style="margin-top:8px">BYD 전기차 1:18 다이캐스트 모델카<br><span style="font-size:14px;color:var(--mut);font-weight:600">고단가 컬렉터블 · 지속 강세</span></div></div>
+        </div>
+        <div class="pstat"><span class="big">$2.58M</span><span class="sub">1,994건 주문 · $1,293</span></div>
+        <div class="acts"><span class="act act-aff">🤝 제휴</span></div>
+        <div class="howto"><b>마니아 컬렉터블.</b> "가장 미래적인 자동차" 콘텐츠 + 제휴. 우주/테크 블로그 연결.</div>
+        <div class="links"><a class="lnk l-ali" target="_blank" rel="noopener" href="https://www.aliexpress.com/wholesale?SearchText=byd+1+18+diecast+model+car">🛒 알리</a><a class="lnk l-amz" target="_blank" rel="noopener" href="https://www.amazon.com/s?k=byd+diecast+model+car+1+18">📦 아마존</a><a class="lnk l-stt" target="_blank" rel="noopener" href="https://www.sellthetrend.com/dashboard/products/everything">🔗 셀더트렌드</a></div>
+      </div>
+      <div class="pcard">
+        <div class="top">
+          <a href="https://www.aliexpress.com/wholesale?SearchText=star+galaxy+projector" target="_blank" rel="noopener" class="thumb t-purple"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M50 20l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/><circle cx="78" cy="28" r="2.5" fill="currentColor" stroke="none"/><circle cx="24" cy="70" r="2.5" fill="currentColor" stroke="none"/></svg></a>
+          <div class="meta"><span class="plat plat-nx">넥서스 AI</span><div class="pname" style="margin-top:8px">스타/갤럭시 라이트 프로젝터<br><span style="font-size:14px;color:var(--mut);font-weight:600">우주 블로그 연결템</span></div></div>
+        </div>
+        <div class="pstat"><span class="big">603건</span><span class="sub">주문 · $26,161 · $43.38</span></div>
+        <div class="acts"><span class="act act-aff">🤝 제휴</span></div>
+        <div class="howto"><b>우주 블로그 직결.</b> "천장을 은하수로" 콘텐츠 + theuniverseepisodes.com 제휴 트래픽.</div>
+        <div class="links"><a class="lnk l-ali" target="_blank" rel="noopener" href="https://www.aliexpress.com/wholesale?SearchText=star+galaxy+projector">🛒 알리</a><a class="lnk l-amz" target="_blank" rel="noopener" href="https://www.amazon.com/s?k=galaxy+star+projector">📦 아마존</a><a class="lnk l-stt" target="_blank" rel="noopener" href="https://www.sellthetrend.com/dashboard/products/everything">🔗 셀더트렌드</a></div>
+      </div>
+      <div class="pcard">
+        <div class="top">
+          <a href="https://www.aliexpress.com/wholesale?SearchText=lymphatic+contour+face+brush" target="_blank" rel="noopener" class="thumb t-pink"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M40 18l30 30-22 22a14 14 0 01-20-20z"/><path d="M30 60l-12 12"/></svg></a>
+          <div class="meta"><span class="plat plat-nx">넥서스 AI</span> <span class="hd">🔥 하이디맨드</span><div class="pname" style="margin-top:8px">림프 컨투어 페이스 브러시<br><span style="font-size:14px;color:var(--mut);font-weight:600">뷰티 — 고주문 스테디</span></div></div>
+        </div>
+        <div class="pstat"><span class="big">1.98만</span><span class="sub">건 주문 · $355K · $17.99</span></div>
+        <div class="acts"><span class="act act-drop">🚚 드롭쉬핑</span><span class="act act-aff">🤝 제휴</span></div>
+        <div class="howto"><b>저단가 뷰티 가젯.</b> 광고 참여율 높은 뷰티 비포/애프터 영상과 궁합.</div>
+        <div class="links"><a class="lnk l-ali" target="_blank" rel="noopener" href="https://www.aliexpress.com/wholesale?SearchText=lymphatic+contour+face+brush">🛒 알리</a><a class="lnk l-amz" target="_blank" rel="noopener" href="https://www.amazon.com/s?k=lymphatic+face+brush">📦 아마존</a><a class="lnk l-stt" target="_blank" rel="noopener" href="https://www.sellthetrend.com/dashboard/products/everything">🔗 셀더트렌드</a></div>
+      </div>
+      <div class="pcard" style="border-color:rgba(255,178,62,.35);background:linear-gradient(135deg,rgba(255,178,62,.06),transparent),var(--card)">
+        <div style="font-family:var(--mono);font-size:13px;color:var(--amber);font-weight:700;margin-bottom:14px">💡 잘 팔리는 가격대 & 공식</div>
+        <div style="font-size:17px;line-height:2;color:var(--sub)"><b style="color:var(--ink)">틱톡샵:</b> $10~$30 (베이비·공구 양극화)<br><b style="color:var(--ink)">넥서스 AI:</b> $30~$75 (다이캐스트·뷰티)<br><b style="color:var(--ink)">바이럴 광고:</b> $15~$40 (제습·냉방·카메라)</div>
+        <div class="howto" style="margin-top:auto"><b>핵심:</b> 가벼운 $10~40 제품은 드롭쉬핑, 디자인·컬렉터블은 제휴/브랜드화로 마진 키우기.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="screen" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--purple)"><span class="num" style="background:var(--purple);color:#160d2e">▶</span> 사람들은 이렇게 팔고 있다 · 잘 되는 영상·광고 포맷</div>
+    <h2 class="title">잘 팔리는 <span class="hi-p">영상 공식</span> + 실제 영상</h2>
+    <p class="lead">이번 주 광고 파인더에서 참여율이 높았던 포맷이에요. <b class="hi-p">▶ 영상 보기</b>를 누르면 해당 포맷의 실제 영상으로 바로 이동해요.</p>
+    <div class="grid g3">
+      <div class="adcard" style="border-color:rgba(155,124,255,.45)">
+        <div class="fmt">FORMAT 01 · 문제 자극(바이럴)</div>
+        <div class="ah">"아직도 곰팡이 핀 습한 방에서?"</div>
+        <div class="aq">여름 습기·곰팡이를 자극하고 제습/곰팡이 제거를 보여주는 problem-agitation 포맷. <b style="color:var(--ink)">붙일 제품:</b> 제습기·UV 청소기·곰팡이 제거제.</div>
+        <div class="amet">📈 745,200회 재생 · 댓글 2.1K · 공유 1.7K · 이번 주 1위</div>
+        <a class="lnk l-vid" target="_blank" rel="noopener" href="https://www.tiktok.com/search?q=dehumidifier%20mold">▶ 이 포맷 영상 보기 (제습·곰팡이)</a>
+      </div>
+      <div class="adcard">
+        <div class="fmt">FORMAT 02 · 매장 언박싱</div>
+        <div class="ah">"이 카메라는 다 된다" 포켓 카메라</div>
+        <div class="aq">매장에서 제품을 집어 언박싱하는 데모 포맷 + 틱톡샵 딜 이벤트 태그. <b style="color:var(--ink)">붙일 제품:</b> 포켓 카메라·짐벌·여름 가젯.</div>
+        <div class="amet">📈 67,600회 재생 · 댓글 122 · #TikTokShopDealsforYouDays</div>
+        <a class="lnk l-vid" target="_blank" rel="noopener" href="https://www.tiktok.com/tag/TikTokShopDealsforYouDays">▶ 이 포맷 영상 보기 (틱톡샵 딜)</a>
+      </div>
+      <div class="adcard">
+        <div class="fmt">FORMAT 03 · 뷰티 비포/애프터</div>
+        <div class="ah">백발 염색 변신 리빌 (50% 할인)</div>
+        <div class="aq">발라서 바뀌는 모습을 보여주는 reveal 포맷. 뷰티는 순위가 빠졌지만 광고 참여율은 여전히 최강. <b style="color:var(--ink)">붙일 제품:</b> 염색·헤어·뷰티 가젯.</div>
+        <div class="amet">❤️ 484 좋아요 · 댓글 54 · 페북 광고 참여 최상위</div>
+        <a class="lnk l-vid" target="_blank" rel="noopener" href="https://www.tiktok.com/search?q=gray%20hair%20coverage">▶ 이 포맷 영상 보기 (헤어 변신)</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="screen">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">4</span> 아버지의 날 기회 · 6월 21일</div>
+    <h2 class="title">아빠 선물 시장, <span class="hi">배송 마감 임박</span></h2>
+    <p class="lead">이번 주 키워드는 <b class="hi-b">공구·자동차</b>. 아래 4종은 영상·판매에 바로 쓸 추천 제품 — <b class="hi-b">이미지·버튼으로 구매처 이동</b>.</p>
+    <div class="grid g2" style="align-items:start">
+      <div class="fd">
+        <div class="countdown"><span class="big">D-13</span><span class="unit">6월 21일까지</span></div>
+        <div style="font-size:16px;color:var(--sub);margin-bottom:16px">⚠️ 배송 마감 임박 — 긴박감 hook 구간</div>
+        <div class="grid g2" style="gap:12px">
+          <div class="pcard" style="padding:14px">
+            <a href="https://www.aliexpress.com/wholesale?SearchText=wheel+bearing+packer+tool" target="_blank" rel="noopener" class="thumb t-amber" style="width:60px;height:60px;margin-bottom:8px"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6"><circle cx="50" cy="50" r="26"/><circle cx="50" cy="50" r="9"/></svg></a>
+            <div style="font-size:15px;font-weight:800">베어링 패커 공구</div>
+            <div class="links" style="margin-top:8px;padding-top:8px"><a class="lnk l-ali" target="_blank" rel="noopener" href="https://www.aliexpress.com/wholesale?SearchText=wheel+bearing+packer+tool">🛒 알리</a><a class="lnk l-amz" target="_blank" rel="noopener" href="https://www.amazon.com/s?k=wheel+bearing+packer">📦 아마존</a></div>
+          </div>
+          <div class="pcard" style="padding:14px">
+            <a href="https://www.aliexpress.com/wholesale?SearchText=car+fm+transmitter+bluetooth" target="_blank" rel="noopener" class="thumb t-blue" style="width:60px;height:60px;margin-bottom:8px"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"><circle cx="50" cy="62" r="14"/><path d="M50 48V20M50 20l-12 8M50 20l12 8"/></svg></a>
+            <div style="font-size:15px;font-weight:800">차량 FM 트랜스미터</div>
+            <div class="links" style="margin-top:8px;padding-top:8px"><a class="lnk l-ali" target="_blank" rel="noopener" href="https://www.aliexpress.com/wholesale?SearchText=car+fm+transmitter+bluetooth">🛒 알리</a><a class="lnk l-amz" target="_blank" rel="noopener" href="https://www.amazon.com/s?k=car+fm+transmitter+bluetooth">📦 아마존</a></div>
+          </div>
+          <div class="pcard" style="padding:14px">
+            <a href="https://www.aliexpress.com/wholesale?SearchText=socket+extension+rod+flexible" target="_blank" rel="noopener" class="thumb t-gray" style="width:60px;height:60px;margin-bottom:8px"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"><path d="M22 50h40"/><rect x="62" y="40" width="18" height="20" rx="3"/></svg></a>
+            <div style="font-size:15px;font-weight:800">소켓 연장봉</div>
+            <div class="links" style="margin-top:8px;padding-top:8px"><a class="lnk l-ali" target="_blank" rel="noopener" href="https://www.aliexpress.com/wholesale?SearchText=socket+extension+rod+flexible">🛒 알리</a><a class="lnk l-amz" target="_blank" rel="noopener" href="https://www.amazon.com/s?k=flexible+socket+extension">📦 아마존</a></div>
+          </div>
+          <div class="pcard" style="padding:14px">
+            <a href="https://www.aliexpress.com/wholesale?SearchText=cooling+hat+with+fan" target="_blank" rel="noopener" class="thumb t-green" style="width:60px;height:60px;margin-bottom:8px"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 60a32 16 0 0164 0z"/><path d="M30 60c0-14 8-26 20-26s20 12 20 26"/></svg></a>
+            <div style="font-size:15px;font-weight:800">팬 내장 쿨링 모자</div>
+            <div class="links" style="margin-top:8px;padding-top:8px"><a class="lnk l-ali" target="_blank" rel="noopener" href="https://www.aliexpress.com/wholesale?SearchText=cooling+hat+with+fan">🛒 알리</a><a class="lnk l-amz" target="_blank" rel="noopener" href="https://www.amazon.com/s?k=cooling+hat+with+fan">📦 아마존</a></div>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="pcard" style="border-color:rgba(255,111,165,.35)">
+          <div style="font-family:var(--mono);font-size:13px;color:var(--pink);font-weight:700;margin-bottom:10px">🎬 미국주부 영상 아이디어</div>
+          <div style="font-size:23px;font-weight:800;line-height:1.3">"미국 아빠가 진짜 좋아하는<br><span class="hi">Father's Day 선물 TOP 7</span>"</div>
+          <div style="font-size:15px;color:var(--sub);margin-top:10px;line-height:1.55">왼쪽 공구·자동차·우주 굿즈 + "지금 주문해야 도착(D-13)" 긴박감. 쇼츠+롱폼, 제휴 링크 자연 삽입.</div>
+        </div>
+        <div class="pcard" style="border-color:rgba(155,124,255,.4)">
+          <div style="font-family:var(--mono);font-size:13px;color:var(--purple);font-weight:700;margin-bottom:10px">🏷️ 내 브랜드화 — Etsy 디지털 상품</div>
+          <div style="font-size:16px;line-height:1.7">"세계 1등 아빠" 프린터블 · 아빠 쿠폰북 · <b>아버지의 날 감사 레터(PDF)</b> — 배송 마감 없이 6/20까지 판매</div>
+          <div class="links" style="margin-top:10px"><a class="lnk l-brand" style="color:var(--purple);border-color:rgba(155,124,255,.4)" target="_blank" rel="noopener" href="https://www.etsy.com/search?q=fathers+day+printable+gift">🏷️ Etsy에서 보기</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="screen">
+  <div class="wrap">
+    <div class="eyebrow"><span class="num">5</span> 신상 위너 제품 · 전문가 검증 통과</div>
+    <h2 class="title">이번 주 새로 뜬 <span class="hi-g">청소·냉방 위너</span></h2>
+    <p class="lead">마진·예상매출 높은 순. <b class="hi-b">이미지·버튼으로 알리/아마존/셀더트렌드 이동</b>. (예상매출 = 셀더트렌드 월 매출 잠재력 추정치)</p>
+    <div class="grid g2">
+      <div>
+        <div class="win top">
+          <a href="https://www.aliexpress.com/wholesale?SearchText=handheld+steam+cleaner" target="_blank" rel="noopener" class="thumb t-green"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M30 70V44a14 14 0 0128 0v26z"/><path d="M58 50h14l8-10"/><path d="M44 30c0-6-6-6-6-12M54 28c0-5-5-5-5-10"/></svg></a>
+          <div class="wn"><div class="crown">👑 최고 마진/POT</div><div class="t">고압 스팀 청소기</div><div class="c">청소 가전 / 드롭쉬핑·제휴</div></div>
+          <div class="m"><div class="mv2">$65.50</div><div class="ml">개당 마진 · 예상매출 $115.5K</div></div>
+          <div class="wlinks"><a class="lnk l-ali" target="_blank" rel="noopener" href="https://www.aliexpress.com/wholesale?SearchText=handheld+steam+cleaner">🛒 알리</a><a class="lnk l-amz" target="_blank" rel="noopener" href="https://www.amazon.com/s?k=handheld+steam+cleaner">📦 아마존</a><a class="lnk l-stt" target="_blank" rel="noopener" href="https://www.sellthetrend.com/dashboard/products/hand-picked">🔗 셀더트렌드</a></div>
+        </div>
+        <div class="win">
+          <a href="https://www.aliexpress.com/wholesale?SearchText=uv+mattress+vacuum+cleaner" target="_blank" rel="noopener" class="thumb t-blue"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><rect x="24" y="30" width="52" height="28" rx="8"/><path d="M34 58v14h32V58"/><path d="M40 44h20"/></svg></a>
+          <div class="wn"><div class="t">UV 매트리스 청소기 (16KPA)</div><div class="c">청소 가전 / 드롭쉬핑</div></div>
+          <div class="m"><div class="mv2">$58.15</div><div class="ml">마진 · 예상매출 $66.5K</div></div>
+          <div class="wlinks"><a class="lnk l-ali" target="_blank" rel="noopener" href="https://www.aliexpress.com/wholesale?SearchText=uv+mattress+vacuum+cleaner">🛒 알리</a><a class="lnk l-amz" target="_blank" rel="noopener" href="https://www.amazon.com/s?k=uv+mattress+vacuum">📦 아마존</a><a class="lnk l-stt" target="_blank" rel="noopener" href="https://www.sellthetrend.com/dashboard/products/hand-picked">🔗 셀더트렌드</a></div>
+        </div>
+        <div class="win">
+          <a href="https://www.aliexpress.com/wholesale?SearchText=cooling+hat+with+fan+sun" target="_blank" rel="noopener" class="thumb t-green"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 62a34 16 0 0168 0z"/><path d="M30 62c0-15 8-28 20-28s20 13 20 28"/></svg></a>
+          <div class="wn"><div class="t">팬 내장 쿨링 모자</div><div class="c">여름 냉방 / 제휴·드롭쉬핑</div></div>
+          <div class="m"><div class="mv2">$40.66</div><div class="ml">마진 · 예상매출 $68K</div></div>
+          <div class="wlinks"><a class="lnk l-ali" target="_blank" rel="noopener" href="https://www.aliexpress.com/wholesale?SearchText=cooling+hat+with+fan+sun">🛒 알리</a><a class="lnk l-amz" target="_blank" rel="noopener" href="https://www.amazon.com/s?k=cooling+hat+with+fan">📦 아마존</a><a class="lnk l-stt" target="_blank" rel="noopener" href="https://www.sellthetrend.com/dashboard/products/hand-picked">🔗 셀더트렌드</a></div>
+        </div>
+      </div>
+      <div>
+        <div class="win">
+          <a href="https://www.aliexpress.com/wholesale?SearchText=car+seat+cooling+fan" target="_blank" rel="noopener" class="thumb t-blue"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"><circle cx="50" cy="50" r="10"/><path d="M50 40c8-18 22-14 22-4 0 8-12 10-22 4M50 60c-8 18-22 14-22 4 0-8 12-10 22-4M60 50c18-8 14-22 4-22-8 0-10 12-4 22M40 50c-18 8-14 22-4 22 8 0 10-12 4-22"/></svg></a>
+          <div class="wn"><div class="t">차량 시트 쿨링 팬</div><div class="c">자동차/냉방 / 드롭쉬핑</div></div>
+          <div class="m"><div class="mv2">$28.67</div><div class="ml">마진 · 예상매출 $50K</div></div>
+          <div class="wlinks"><a class="lnk l-ali" target="_blank" rel="noopener" href="https://www.aliexpress.com/wholesale?SearchText=car+seat+cooling+fan">🛒 알리</a><a class="lnk l-amz" target="_blank" rel="noopener" href="https://www.amazon.com/s?k=car+seat+cooling+fan">📦 아마존</a><a class="lnk l-stt" target="_blank" rel="noopener" href="https://www.sellthetrend.com/dashboard/products/hand-picked">🔗 셀더트렌드</a></div>
+        </div>
+        <div class="win">
+          <a href="https://www.aliexpress.com/wholesale?SearchText=solar+bug+zapper+outdoor" target="_blank" rel="noopener" class="thumb t-amber"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M52 18L30 56h18l-4 26 24-40H50z"/></svg></a>
+          <div class="wn"><div class="t">태양광 모기퇴치기 (4팩)</div><div class="c">야외/여름 / 드롭쉬핑</div></div>
+          <div class="m"><div class="mv2">$31.42</div><div class="ml">마진 · 예상매출 $52.3K</div></div>
+          <div class="wlinks"><a class="lnk l-ali" target="_blank" rel="noopener" href="https://www.aliexpress.com/wholesale?SearchText=solar+bug+zapper+outdoor">🛒 알리</a><a class="lnk l-amz" target="_blank" rel="noopener" href="https://www.amazon.com/s?k=solar+bug+zapper">📦 아마존</a><a class="lnk l-stt" target="_blank" rel="noopener" href="https://www.sellthetrend.com/dashboard/products/hand-picked">🔗 셀더트렌드</a></div>
+        </div>
+        <div class="win" style="border-color:rgba(55,224,166,.45)">
+          <a href="https://www.aliexpress.com/wholesale?SearchText=floor+cleaning+tablets+multi+surface" target="_blank" rel="noopener" class="thumb t-green"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"><circle cx="38" cy="42" r="14"/><circle cx="62" cy="58" r="14"/></svg></a>
+          <div class="wn"><div class="crown">⭐ 위생 트렌드</div><div class="t">다목적 바닥 세정 타블렛</div><div class="c">청소 / 드롭쉬핑·브랜드화</div></div>
+          <div class="m"><div class="mv2">$27.35</div><div class="ml">마진 · 예상매출 $49K</div></div>
+          <div class="wlinks"><a class="lnk l-ali" target="_blank" rel="noopener" href="https://www.aliexpress.com/wholesale?SearchText=floor+cleaning+tablets+multi+surface">🛒 알리</a><a class="lnk l-amz" target="_blank" rel="noopener" href="https://www.amazon.com/s?k=floor+cleaning+tablets">📦 아마존</a><a class="lnk l-stt" target="_blank" rel="noopener" href="https://www.sellthetrend.com/dashboard/products/hand-picked">🔗 셀더트렌드</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="screen" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--purple)"><span class="num" style="background:var(--purple);color:#160d2e">▶</span> 미국주부 채널 · 이번 주 콘텐츠 3선</div>
+    <h2 class="title">데이터가 알려준 <span class="hi-p">찍을 영상</span></h2>
+    <p class="lead">이번 주 리포트에서 바로 뽑은, 조회수 가능성 높은 영상 3개예요.</p>
+    <div class="grid g3">
+      <div class="vid"><div class="vnum">01</div><div class="vt">미국 집 곰팡이·습기, 여름엔 이거 하나면 끝</div><div class="vd">제습/곰팡이 광고가 745K 재생으로 이번 주 압도적 바이럴. 제습기·UV 청소기·바닥 세정 타블렛 실사용.</div><div class="vmeta">💧 745K 바이럴 검증 · 여름 검색 최고 구간</div></div>
+      <div class="vid"><div class="vnum">02</div><div class="vt">아빠가 진짜 좋아하는 Father's Day 선물 TOP 7</div><div class="vd">D-13 배송 마감 긴박감. 공구(베어링 패커·소켓봉)·자동차(FM·시트팬)·우주 굿즈 추천.</div><div class="vmeta">🎁 D-13 시즌 hook · Etsy/제휴 연계</div></div>
+      <div class="vid"><div class="vnum">03</div><div class="vt">$43 스타 프로젝터, 진짜 우주처럼 보일까? + 여름 차박템</div><div class="vd">Sky Light Projector + 여름 냉방(시트팬·쿨링모자) = "여름 차박 필수템". 우주 채널 정체성 연결.</div><div class="vmeta">🌌 theuniverseepisodes.com 트래픽 유도</div></div>
+    </div>
+  </div>
+</section>
+<div class="foot">
+  자동 생성 · 셀더트렌드(Sell The Trend) 주간 리포트 — 2026.06.08<br>
+  제품 아이콘: 카테고리 SVG · 링크: 알리익스프레스/아마존 검색 + 셀더트렌드 대시보드 + TikTok 검색/해시태그<br>
+  수집: 틱톡샵 익스플로러 · 넥서스 AI · 핸드픽 위너 · 페이스북/틱톡 광고 파인더 · 니치 스파이
+</div>
+<script>
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.style.opacity=1;e.target.style.transform='none';io.unobserve(e.target)}})},{threshold:.08});
+document.querySelectorAll('.kpi,.pcard,.win,.vid,.adcard,.chartwrap,.fd,.tbItem').forEach((el,i)=>{el.style.opacity=0;el.style.transform='translateY(16px)';el.style.transition='opacity .5s ease '+(i%6*0.05)+'s, transform .5s ease '+(i%6*0.05)+'s';io.observe(el)});
+</script>
+</body>
+</html>
